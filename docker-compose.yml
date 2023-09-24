@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  tvbox-py:
+    image: tvbox-py
+    container_name: tvbox-py
+    restart: always
+    privileged: true
+
+networks:
+  default:
+    external: true
+    name: net
